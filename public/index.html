@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <div class="w-ft mx-auto bg-white-500 rounded-lg shadow-2xl">
+
+   
+    <div class="w-96 m-8 pt-8">
+        <form action="">
+          <div class="output" >
+              <input type="text" disabled class="bg-gray-100 w-full h-24 text-right text-6xl rounded-lg"> 
+          </div>
+          <div class="keypad-container py-8">
+            <div class="grid grid-cols-4 gap-4 keypad">
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">1</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">2</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">3</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">+</button></div>
+
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">4</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">5</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">6</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">-</button></div>
+
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">7</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">8</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">9</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">x</button></div>
+
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">.</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">0</button></div>
+          <div class="shadow-lg"><button type="button" onclick="clearInput()" class="w-full py-4 font-bold text-lg bg-yellow-300">C</button></div>
+          <div class="shadow-lg"><button type="button" class="w-full py-4 font-bold text-lg bg-yellow-300 screenkeys">/</button></div>
+
+          <div class="shadow-lg col-start-1 col-span-2"><button type="button" class="w-full py-4 font-black text-lg text-yellow-600 border border-yellow-300">=</button></div>
+          <div class="shadow-lg"><button type="button" onclick="deleteInput()" class="w-full py-4 font-bold text-lg text-white bg-red-500">DEL</button></div>
+
+          <div class="shadow-lg "><button type="button" class="w-full py-4 font-black text-lg bg-red-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="object-center mx-auto" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(255, 255, 255);transform:;-ms-filter:"><path d="M12 15.586L7.707 11.293 6.293 12.707 12 18.414 17.707 12.707 16.293 11.293z"></path><path d="M17.707 7.707L16.293 6.293 12 10.586 7.707 6.293 6.293 7.707 12 13.414z"></path></svg>
+          </button></div>
+
+
+
+            </div>
+          </div>
+
+        </form>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

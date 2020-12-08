@@ -1,0 +1,9 @@
+.w-ft{
+    width:fit-content;
+}
+.keypad div button{
+    border-radius: .5rem;
+    height: 100%;
+    text-align: center;
+   
+}
